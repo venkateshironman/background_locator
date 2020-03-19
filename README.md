@@ -1,6 +1,7 @@
 # background_locator
 
 A Flutter plugin for updating location in background.
+[![Codemagic build status](https://api.codemagic.io/apps/5e737c5f2ab6bb0019392bb8/5e737c5f2ab6bb0019392bb7/status_badge.svg)](https://codemagic.io/apps/5e737c5f2ab6bb0019392bb8/5e737c5f2ab6bb0019392bb7/latest_build)
 
 ## Install
 ##### 1. Depend on it
