@@ -5,6 +5,14 @@ workflows:
       flutter: stable
       xcode: latest
       cocoapods: default
+    triggering:
+      events:
+        - push
+        - pull_request
+    branch_patterns:
+      - pattern: '*'
+        include: true
+        source: true
     scripts:
       - flutter --version
       - flutter pub get
