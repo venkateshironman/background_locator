@@ -1,0 +1,14 @@
+workflows:
+  build-workflow:
+    name: Build Workflow
+    environment:
+      flutter: stable
+      xcode: latest
+      cocoapods: default
+    scripts:
+      - flutter --version
+      - flutter pub get
+      - dartfmt lib/src --set-exit-if-changed --fix -n
+      - flutter analyze
+      - cd example && flutter build apk --debug
+      - cd example && flutter build ios --debug --no-codesign
