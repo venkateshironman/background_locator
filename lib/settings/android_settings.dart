@@ -54,7 +54,7 @@ class AndroidSettings extends LocatorSettings {
       this.interval = 5,
       double distanceFilter = 0,
       this.androidNotificationSettings = const AndroidNotificationSettings(),
-      this.wakeLockTime = 60})
+      this.wakeLockTime = 5})
       : super(accuracy: accuracy, distanceFilter: distanceFilter);
 
   Map<String, dynamic> toMap() {
