@@ -88,7 +88,7 @@ class IsolateHolderService : Service() {
     private var notificationBigMsg = "Background location is on to keep the app up-tp-date with your location. This is required for main features to work properly when the app is not running."
     private var notificationIconColor = 0
     private var icon = 0
-    private var wakeLockTime = 60 * 60 * 1000L // 1 hour default wake lock time
+    private var wakeLockTime = 5 * 60 * 1000L // 1 hour default wake lock time
     private val notificationId = 1
 
     override fun onBind(intent: Intent?): IBinder? {
